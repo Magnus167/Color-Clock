@@ -1,0 +1,123 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 461
+  ClientWidth = 484
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnActivate = FormActivate
+  OnCanResize = FormCanResize
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object RefImg: TImage
+    Left = 8
+    Top = 16
+    Width = 1
+    Height = 1
+  end
+  object Image1: TImage
+    Left = 0
+    Top = 0
+    Width = 96
+    Height = 105
+  end
+  object Label1: TLabel
+    Left = 192
+    Top = 192
+    Width = 115
+    Height = 48
+    Caption = 'Label1'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -40
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 192
+    Top = 296
+    Width = 119
+    Height = 41
+    Caption = 'Start'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 352
+    Top = 384
+    Width = 99
+    Height = 33
+    Caption = 'Clear and Restart'
+    TabOrder = 4
+    OnClick = Button2Click
+  end
+  object Mins: TEdit
+    Left = 221
+    Top = 113
+    Width = 60
+    Height = 41
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+    TextHint = 'mm'
+    OnKeyPress = MinsKeyPress
+    OnKeyUp = MinsKeyUp
+  end
+  object Seconds: TEdit
+    Left = 287
+    Top = 113
+    Width = 60
+    Height = 41
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    HideSelection = False
+    ParentFont = False
+    TabOrder = 2
+    TextHint = 'ss'
+    OnClick = SecondsClick
+    OnKeyPress = MinsKeyPress
+    OnKeyUp = MinsKeyUp
+  end
+  object Hrs: TEdit
+    Left = 155
+    Top = 113
+    Width = 60
+    Height = 41
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    TextHint = 'hh'
+    OnKeyPress = MinsKeyPress
+    OnKeyUp = MinsKeyUp
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 104
+    Top = 40
+  end
+end
